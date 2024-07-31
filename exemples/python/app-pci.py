@@ -23,20 +23,20 @@ def main():
     ioctl(fd, WR_GREEN_LEDS)
     retval = os.write(fd, data.to_bytes(4, 'little'))
     print("wrote %d bytes"%retval)
-    
-    data = 0x3FFFF
+  	
+  	#Falta o led vermelho!
+  	#data = 0x0000
     ioctl(fd, WR_RED_LEDS)
     retval = os.write(fd, data.to_bytes(4, 'little'))
     print("wrote %d bytes"%retval)
 	
     # data to write
-    data = 0x40404079
     ioctl(fd, WR_R_DISPLAY)
     retval = os.write(fd, data.to_bytes(4, 'little'))
     print("wrote %d bytes"%retval)
 
     # data to write
-    data = 0x79797979
+   
     ioctl(fd, WR_L_DISPLAY)
     retval = os.write(fd, data.to_bytes(4, 'little'))
     print("wrote %d bytes"%retval)
