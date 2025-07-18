@@ -9,7 +9,6 @@ This project was developed as part of the **IF817 - Interface Hardware-Software*
 3. **João Victor da Silva Nascimento** - (jvsn2)
 4. **Felipe Torres** - (felipetmacedo)
 5. **Matheus Ayres dos Santos** - (mas11)
-6. **Breno Ramos** - (brsg)
 
 
 ## About the Project
