@@ -2,7 +2,7 @@
 
 This project was developed as part of the **IF817 - Interface Hardware-Software** course at UFPE, consisting of implementing an interactive game running on a **DE2i-150** (Intel/Altera) development board, including the complete development of device drivers necessary for communication with the board's peripherals.
 
-## 👥 Team Members
+## Team Members
 
 1. **Artur Vinicius Pereira Fernandes** - (arturvpf)
 2. **Felipe Mateus Falcão Barreto** - (felipemfb)
@@ -12,21 +12,21 @@ This project was developed as part of the **IF817 - Interface Hardware-Software*
 6. **Breno Ramos** - (brsg)
 
 
-## �📋 About the Project
+## About the Project
 
 The project implements a complete system that includes:
 
-### 🎮 **Interactive Game**
+### **Interactive Game**
 - Game developed to run directly on the DE2i-150 board
 - Uses available peripherals on the board for user interaction
 - Interface through buttons, switches, LEDs, and 7-segment displays
 
-### 🔧 **Device Drivers**
+### **Device Drivers**
 - **PCI Driver**: Communication with DE2i-150 board via PCI bus
 - **Char Driver**: Character device driver for basic operations
 - Complete implementation of read/write operations and ioctl
 
-### 🎯 **Supported Peripherals**
+### **Supported Peripherals**
 The DE2i-150 board has several peripherals controlled through the drivers:
 
 - **Switches**: Slide switches for data input
@@ -35,7 +35,7 @@ The DE2i-150 board has several peripherals controlled through the drivers:
 - **7-Segment Displays**: Numeric display (left and right)
 - **PCI Interface**: High-speed communication with the system
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -48,7 +48,7 @@ The DE2i-150 board has several peripherals controlled through the drivers:
                          └─────────────────┘
 ```
 
-## 📂 Detailed Project Structure
+## Detailed Project Structure
 
 ### **`driver/`** - Kernel Modules
 - **`pci/de2i-150.c`**: Main PCI driver for board communication
@@ -75,7 +75,7 @@ The DE2i-150 board has several peripherals controlled through the drivers:
 ### **`jogo_main/`** - Game Implementation
 - Directory for main game implementation
 
-## 🔌 Available ioctl Commands
+## Available ioctl Commands
 
 The driver supports the following commands for peripheral control:
 
@@ -88,7 +88,7 @@ The driver supports the following commands for peripheral control:
 #define WR_GREEN_LEDS _IO('a', 'f')  // Control green LEDs
 ```
 
-## 🚀 How to Compile and Run
+## How to Compile and Run
 
 ### Prerequisites
 - Linux system with kernel headers
@@ -117,13 +117,13 @@ sudo insmod driver/pci/de2i-150.ko
 sudo chmod 666 /dev/mydev
 ```
 
-## 📚 Additional Resources
+## Additional Resources
 
 - **[Useful Commands](docs/commands.md)**: Complete list of development commands
 - **Makefile**: Simplified build system
 - **setup.sh**: Automated environment setup script
 
-## 🎓 Academic Context
+## Academic Context
 
 This project demonstrates fundamental concepts of:
 - **Systems Programming**: Kernel-level development
